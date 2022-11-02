@@ -44,6 +44,9 @@
 </nav>
 
 <div class="container" [ngSwitch]="aba">
+  <template [ngSwitchCase]="'mapa'">
+    <p>Modo mapa ativado</p>
+  </template>
   <p *ngSwitchCase="'mapa'">Modo mapa ativado</p>
   <p *ngSwitchCase="'lista'">Modo lista ativado</p>
   <p *ngSwitchDefault>Home</p>
