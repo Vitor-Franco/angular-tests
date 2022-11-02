@@ -1,0 +1,25 @@
+<h1>
+  Testando estrelas com property binding
+
+  <i
+    class="bi"
+    [class.bi-star]="!meuFavorito"
+    [class.bi-star-fill]="meuFavorito"
+    (click)="onClick()"
+  ></i>
+</h1>
+
+<br /><br />
+
+<h1>
+  Testando estrelas com ngClass
+
+  <i
+    class="bi"
+    [ngClass]="{
+      'bi-star': !meuFavorito,
+      'bi-star-fill': meuFavorito
+    }"
+    (click)="onClick()"
+  ></i>
+</h1>
